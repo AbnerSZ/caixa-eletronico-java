@@ -47,18 +47,5 @@ public class FrameCaixaEletronico extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setBounds(113, 54, 233, 33);
-		contentPane.add(btnNewButton);
-		
-		JButton button = new JButton("New button");
-		button.setBounds(113, 144, 105, 27);
-		contentPane.add(button);
-		
-		JButton btnNewButton_1 = new JButton("New button");
-		btnNewButton_1.setBounds(113, 99, 233, 33);
-		contentPane.add(btnNewButton_1);
-
 	}
 }
