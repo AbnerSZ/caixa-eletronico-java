@@ -121,10 +121,11 @@ public class CaixaEletronico implements ICaixaEletronico{
         public void verificarCotaMinima() {
             atualizarTotalDisponivel();
             if(cotaMinima > totalDisponivel)
-                throw new RuntimeException("Caixa vazio: Chame o operador");
+                throw new RuntimeException("Caixa vazio: Chame o operador.");
         }
 
         private void atualizarTotalDisponivel() {
+        	totalDisponivel = 0;
             for(int[] cedula : cedulas) {
                 // para cada cedula, adicionar o resultado do tipo(2, 5, 10 reais...) x quantidade
                 totalDisponivel += cedula[0] *  cedula[1];
